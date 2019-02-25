@@ -73,37 +73,26 @@
     
     <rect x="711" y="488.5" width="207.72" height="75.5" rx="37.75" ry="37.75" fill="#f8ac8e" stroke="#f8ac8e" stroke-miterlimit="10" opacity="0.9"/>
     
-    <text transform="translate(640.16 326.16)" font-size="42" fill="#43616d" font-family="Nobel-Book, Nobel">whe
-        <tspan x="65.27" y="0" letter-spacing="-0.01em">r</tspan>
-        <tspan x="78.29" y="0">e a</tspan>
-        <tspan x="123.94" y="0" letter-spacing="0.01em">r</tspan>
-        <tspan x="138.22" y="0">t meets tech</tspan>
-    </text>
+    <text transform="translate(640.16 326.16)" font-size="42" fill="#43616d" font-family="Nobel-Book, Nobel">where art meets tech</text>
     
-    <text transform="translate(359.22 395.37)" opacity="0.9" font-size="43" fill="#43616d" font-family="Nobel-Bold, Nobel" font-weight="700">GEO
-        <tspan x="94.99" y="0" letter-spacing="-0.02em">R</tspan>
-        <tspan x="121.82" y="0">GIA TECH </tspan>
-        <tspan x="0" y="51.6">IN</tspan>
-        <tspan x="47.13" y="51.6" letter-spacing="-0.02em">S</tspan>
-        <tspan x="71.77" y="51.6">T</tspan>
-        <tspan x="93.95" y="51.6" letter-spacing="-0.02em">R</tspan>
-        <tspan x="121.13" y="51.6">UCTIONAL CENTER</tspan>
+    <text transform="translate(359.22 395.37)" opacity="0.9" font-size="43" fill="#43616d" font-family="Nobel-Bold, Nobel" font-weight="700">
+        <tspan x="0" y="0">GEORGIA TECH</tspan>
+        <tspan x="0" y="51.6">INSTRUCTIONAL CENTER</tspan>
         <tspan x="0" y="103.2">APRIL 5TH-6TH</tspan>
     </text>
     
     <text transform="translate(748.68 535.37)" font-size="36.63" fill="#43616d" font-family="MyriadPro-Semibold, Myriad Pro" font-weight="700">
-        <tspan letter-spacing="0em">R</tspan>
-        <tspan x="20.95" y="0">e</tspan>
-        <tspan x="39.86" y="0" letter-spacing="0em">g</tspan>
+        <tspan x="-15" y="0" letter-spacing="0em">Register</tspan>
+<!--        <tspan x="20.95" y="0">Register</tspan>-->
+<!--        <tspan x="39.86" y="0" letter-spacing="0em">Register</tspan>-->
+<!--
         <tspan x="60.7" y="0">is</tspan>
         <tspan x="85.36" y="0" letter-spacing="-0.01em">t</tspan>
         <tspan x="97.99" y="0">er</tspan>
+-->
     </text>
     
-    <text transform="translate(354.08 290.41)" font-size="117" fill="#ea7e3c" font-family="Nobel-Bold, Nobel" font-weight="700">HORI
-        <tspan x="294.25" y="0" letter-spacing="-0.04em">Z</tspan>
-        <tspan x="366.21" y="0">ONS</tspan>
-    </text>
+    <text transform="translate(354.08 290.41)" font-size="117" fill="#ea7e3c" font-family="Nobel-Bold, Nobel" font-weight="700">HORIZONS</text>
     
     <path d="M1255.85,237.05a165.7,165.7,0,0,0-324-49h41.67a126.5,126.5,0,1,1,174.06,161.71V392.5A165.74,165.74,0,0,0,1255.85,237.05Z" fill="#c2e3d3"/>
     
@@ -227,10 +216,7 @@
     
     <polygon points="64.9 59.79 64.9 68.22 72.2 72.43 79.5 68.22 79.5 59.79 72.2 55.57 64.9 59.79" fill="#43616d"/>
     
-    <text transform="translate(121.29 63.76)" font-size="51.63" fill="#43616d" font-family="Barlow-Regular, Barlow">Hack
-        <tspan x="112.87" y="0" letter-spacing="-0.01em">G</tspan>
-        <tspan x="144.05" y="0">T</tspan>
-    </text>
+    <text transform="translate(121.29 63.76)" font-size="51.63" fill="#43616d" font-family="Barlow-Regular, Barlow">HackGT</text>
     
     <path d="M8.44,231.56c3.21,0,3.22-5,0-5s-3.23,5,0,5Z" fill="#c2e3d3"/>
     
