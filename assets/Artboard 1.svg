@@ -1,4 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768">
+    <style type="text/css">
+<!--
+    path {
+		stroke-dasharray: 10000;
+		stroke-dashoffset: 10000;
+		stroke: orange;
+		stroke-width: 2px;
+		animation: dash 10s linear forwards,
+                
+		fill: none;
+	}
+
+	@keyframes dash {
+		from {
+			stroke-dashoffset: 10000;
+		} to {
+			stroke-dashoffset: 0;
+		}
+	}
+-->
+    path { 
+        
+        
+        stroke-dasharray: 10000;
+		stroke-dashoffset: 10000;
+		stroke: orange;
+		stroke-width: 2px;
+        animation: x 5s ease alternate infinite,
+            dash 5s linear alternate infinite}
+
+        @keyframes x {
+           from {  stroke: white
+                    }
+             to {  stroke: yellow }
+        }
+        	@keyframes dash {
+		from {
+			stroke-dashoffset: 10000;
+		} to {
+			stroke-dashoffset: 0;
+		}
+	}
+    </style>
     <defs>
         <clipPath id="a">
             <rect x="997.82" y="16.49" width="292.68" height="128.52" fill="none"/>
@@ -73,8 +116,6 @@
     <path d="M1166,517.81c-3.55-2.09-3.83-10,1.25-11.3,4.69-1.16,12.6,3.73,12.64,6.88,0,2.18-3.65,3.35-5.66,4S1168.43,519.22,1166,517.81Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
     <!-- Register Button-->
-    <rect x="711" y="488.5" width="207.72" height="75.5" rx="37.75" ry="37.75" fill="#f8ac8e" stroke="#f8ac8e" stroke-miterlimit="10" opacity="0.9" transform="translate(100 0)"/>
-    
     <text transform="translate(640.16 326.16)" font-size="42" fill="#43616d" font-family= "nobel, sans-serif" font-weight="400">where art meets tech</text>
     
     <text transform="translate(359.22 395.37)" opacity="0.9" font-size="43" fill="#43616d" font-family="nobel, sans-serif" font-weight="700">
@@ -83,10 +124,13 @@
         <tspan x="0" y="103.2">APRIL 5TH-6TH</tspan>
     </text>
     
-    <text transform="translate(748.68 535.37)" font-size="36.63" fill="#43616d" font-family="nobel, sans-serif" font-weight="400">
+
+<!--
+            <rect id="reg-bg" x="711" y="488.5" width="207.72" height="75.5" rx="37.75" ry="37.75" fill="#f8ac8e" stroke="#f8ac8e" stroke-miterlimit="10" opacity="0.9" transform="translate(100 0)"/>
+        <text id="reg-text" class= "register-button" transform="translate(748.68 535.37)" font-size="36.63" fill="#43616d" font-family="nobel, sans-serif" font-weight="400">
         <tspan x="91" y="2" letter-spacing="0em">Register</tspan> 
-    </text>
-    
+        </text>
+-->
     <text transform="translate(354.08 290.41)" font-size="117" fill="#ea7e3c" font-family="nobel, sans-serif" font-weight="700" font-style="normal" >HORIZONS</text>
     
     <!--Blue circle-->

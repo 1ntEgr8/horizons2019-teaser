@@ -1,0 +1,7 @@
+    
+<svg id="reg-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768">
+        <rect id="reg-bg" x="711" y="488.5" width="207.72" height="75.5" rx="37.75" ry="37.75" fill="#f8ac8e" stroke="#f8ac8e" stroke-miterlimit="10" opacity="0.9" transform="translate(100 0)"/>
+        <text id="reg-text" class= "register-button" transform="translate(748.68 535.37)" font-size="36.63" fill="#43616d" font-family="nobel, sans-serif" font-weight="400">
+        <tspan x="91" y="2" letter-spacing="0em">Register</tspan> 
+        </text>
+</svg>
