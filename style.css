@@ -34,10 +34,10 @@ body {
     height: 100%;
     width: 100%;
     float: right;
-    overflow:hidden;
     background-repeat: no-repeat;
     background-size: cover;
     flex: auto;
+    z-index: -1;
 }
 
 #splash .col-1-3 {
@@ -163,21 +163,20 @@ section#faq h3 {
     color: white;
 }
 
-#signup > span {
+.button > span {
     z-index: 100;
-    position: relative;
-    color: white;
+    position: absolute;
     /*for some reason leaving in the transition displays the transition from link color to white*/
     /*transition: 0.25s all;*/
 }
 
-#signup:hover > span {
+.button:hover > span {
     z-index: 100;
     position: relative;
-    color: #8FBEFF;
+    color: #f9ac8e;
 }
 
-#signup::before {
+.button::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -188,14 +187,16 @@ section#faq h3 {
     z-index: 2;
     border-radius: 20em;
     transition: 0.25s all;
+    pointer-events: none;
+    
 }
+
 .button {
   background-color: #f9ac8e;
+  border-radius: 20em;
   position: absolute;
-  border: none;
-  border-radius: 50px;
   color: #43616d;
-  font-size: 7vw;
+  font-size: 2vw;
   text-align: center;
   display: flex;
   align-items: center;
@@ -203,16 +204,15 @@ section#faq h3 {
   cursor: pointer;
   width: 12%;
   height: 7%; 
-  margin-left: 1050px;
-  margin-top: 600px;
-  justify-content: center; 
-}
-.button:hover {
-  background-color:rgba(0, 0, 0, 0.1);
+  margin-left: 55%;
+  margin-top: 35%;
+  justify-content: center;
+  border: solid #f9ac8e 0.1em;
 }
 
-#signup:hover::before {
+.button:hover::before {
     left: 0;
+    pointer-events: none;
 }
 
 a {
@@ -293,7 +293,7 @@ footer {
         flex-flow: column;
     }
 
-    #signup {
+    .button {
         margin: 1em auto;
     }
 
@@ -344,7 +344,7 @@ footer {
         text-align: left;
     }
 
-    #signup {
+    .button{
         width: 40%;
     }
 }
