@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-90 10 1500 768">
     <style type="text/css">
 <!--
-    path {
+    path 
 		stroke-dasharray: 10000;
 		stroke-dashoffset: 10000;
 		stroke: orange;
@@ -103,11 +103,11 @@
     
     .blue-circle {
         animation: infinite-spinning 1s linear alternate infinite;
-        transform-origin: 85% 30%;
+        transform-origin: 80% 35%;
     }
     .yellow-circle {
         animation: infinite-spinning-reverse 1s linear alternate infinite;
-        transform-origin: 75% 30%;
+        transform-origin: 70% 15%;
     }
         
     .blue-blob {
@@ -131,18 +131,18 @@
         
     @keyframes infinite-spinning {
          from {
-           transform: rotate(-5deg);
+           transform: rotate(-3deg);
          }
          to {
-           transform: rotate(5deg);
+           transform: rotate(9deg);
          }
     }
     @keyframes infinite-spinning-reverse {
          from {
-           transform: rotate(5deg);
+           transform: rotate(9deg);
          }
          to {
-           transform: rotate(-5deg);
+           transform: rotate(-3deg);
          }
     }
         
@@ -156,9 +156,9 @@
         
     @keyframes hide-triangles {
         from {
-            transform: translate(-6.55%, -0.09%)
+            transform: translate(-6%, 0.1%)
         } to {
-            transform: translate(-5%, 2%)
+            transform: translate(-6.55%, 2%)
         }
         
     }
