@@ -34,56 +34,66 @@
         animation: hide-triangles 1.2s linear alternate infinite;
         transform-origin: center;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .triangles2 {
         animation: hide-triangles 1.2s linear alternate infinite;
         transform-origin: center;
         animation-delay: 0.3s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .triangles3 {
         animation: hide-triangles 1.2s linear alternate infinite;
         transform-origin: center;
         animation-delay: 0.4s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .triangles4 {
         animation: hide-triangles 1.2s linear alternate infinite;
         transform-origin: center;
         animation-delay: 0.6s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .triangles5 {
         animation: hide-triangles 1.2s linear alternate infinite;
         transform-origin: center;
         animation-delay: 0.8s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .triangles6 {
         animation: hide-triangles 1.2s linear alternate infinite;
         transform-origin: center;
         animation-delay: 0.9s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .other-triangles1 {
         animation: hide-triangles 1.2s linear alternate infinite;
         animation-delay: 0.1s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .other-triangles2 {
         animation: hide-triangles 1.2s linear alternate infinite;
         animation-delay: 0.3s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .other-triangles3 {
         animation: hide-triangles 1.2s linear alternate infinite;
         animation-delay: 0.5s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     .other-triangles4 {
         animation: hide-triangles 1.2s linear alternate infinite;
         animation-delay: 0.7s;
         display: block;
+        transform-origin: 0%, 2%;
     }
     
     .orange-blob {
@@ -146,9 +156,9 @@
         
     @keyframes hide-triangles {
         from {
-            transform: translate(0%, 2%)
+            transform: translate(-6.55%, -0.09%)
         } to {
-            transform: translate(1%, 0.3%)
+            transform: translate(-5%, 2%)
         }
         
     }
