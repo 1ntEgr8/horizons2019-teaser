@@ -191,18 +191,20 @@ section#faq h3 {
 }
 .button {
   background-color: #f9ac8e;
+  position: absolute;
   border: none;
   border-radius: 50px;
   color: #43616d;
-/*  padding: 15px 32px;*/
+  font-size: 7vw;
   text-align: center;
   display: flex;
   align-items: center;
   font-family: nobel, sans-serif;
-  font-size=100px;
   cursor: pointer;
-  width: 207.72;
-  height: 75.5; 
+  width: 12%;
+  height: 7%; 
+  margin-left: 1050px;
+  margin-top: 600px;
   justify-content: center; 
 }
 .button:hover {
