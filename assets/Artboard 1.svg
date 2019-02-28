@@ -106,8 +106,8 @@
         transform-origin: 80% 35%;
     }
     .yellow-circle {
-        animation: infinite-spinning-reverse 1s linear alternate infinite;
-        transform-origin: 70% 15%;
+        animation: infinite-spinning 1s linear alternate infinite;
+        transform-origin: 80% 35%;
     }
         
     .blue-blob {
