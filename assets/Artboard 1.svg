@@ -25,7 +25,7 @@
         
         stroke-dasharray: 10000;
 		stroke-dashoffset: 10000;
-        stroke-width: 7px;
+        stroke-width: 10px;
         fill-opacity: 0;
         animation: x 10s linear alternate infinite,
                     dash 10s linear alternate infinite;
