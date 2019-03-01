@@ -21,12 +21,12 @@ body {
 }
 
 .picture {
-    position: relative;
+/*    position: relative;*/
 /*    background-image: url(assets/Artboard%201.svg);*/
-    display: inline-block;
+/*    display: inline-block;*/
     height: 100%;
     width: 100%;
-    float: right;
+/*    float: right;*/
 /*    background-repeat: no-repeat;*/
 /*    background-size: cover;*/
     flex: auto;
@@ -286,6 +286,10 @@ footer {
     .col-1-2 > div {
         margin-right: 8em;
     }
+    
+    .picture {
+        content: url('assets/phoneteaser-01.jpg');
+    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -349,149 +353,3 @@ footer {
         width: 40%;
     }
 }
-
-    .yellow-lines { 
-        
-        
-        stroke-dasharray: 10000;
-		stroke-dashoffset: 10000;
-        stroke-width: 7px;
-        fill-opacity: 0;
-        animation: x 10s linear alternate infinite,
-                    dash 10s linear alternate infinite;
-    }
-        
-    .triangles1:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .triangles2:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .triangles3:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .triangles4:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .triangles5:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .triangles6:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .other-triangles1:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .other-triangles2:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .other-triangles3:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    .other-triangles4:hover {
-        animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
-    }
-    
-    .orange-blob {
-        animation: scale 0.5s forwards linear;
-        transform-origin: 100%, 100%;
-    }
-    
-    .blue-circle:hover {
-        animation: infinite-spinning 1s linear alternate infinite;
-        transform-origin: 80% 35%;
-    }
-    .yellow-circle:hover {
-        animation: infinite-spinning 1s linear alternate infinite;
-        transform-origin: 80% 35%;
-    }
-        
-    .blue-blob {
-        animation: hide-object 0.5s forwards linear; 
-    }
-
-        @keyframes x {
-           from {  
-                stroke: #f3d757
-                    }
-             to {  stroke: #f3d757 }
-        }
-        	
-        @keyframes dash {
-            from {
-                stroke-dashoffset: 10000;
-            } to {
-                stroke-dashoffset: 0;
-            }
-	   }
-        
-    @keyframes infinite-spinning {
-         from {
-           transform: rotate(-3deg);
-         }
-         to {
-           transform: rotate(9deg);
-         }
-    }
-    @keyframes infinite-spinning-reverse {
-         from {
-           transform: rotate(9deg);
-         }
-         to {
-           transform: rotate(-3deg);
-         }
-    }
-        
-    @keyframes hide-object {
-        from {
-            transform: translate(-5.5%, -100%)
-        } to {
-            transform: translate(-5.5%, 1%)
-        }
-    }
-        
-    @keyframes hide-triangles {
-        from {
-            transform: translate(-6%, 0.1%)
-        } to {
-            transform: translate(-6.55%, 2%)
-        }
-        
-    }
-    
-        
-    @keyframes scale {
-        from {
-            transform: scale3d(1.5, 1.5, 1.5);
-        } to {
-            transform: scale3d(1.03, 1.03, 1.03);
-        }
-    }
-    
-    @keyframes opacity {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-    }

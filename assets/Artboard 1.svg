@@ -1,3 +1,4 @@
+<!--paralax-->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-90 10 1500 768">
     <style type="text/css">
 <!--
@@ -32,8 +33,8 @@
         
     .triangles1:hover {
         animation: hide-triangles 1.2s linear alternate infinite;
-        display: block;
-        transform-origin: 0%, 2%;
+<!--        display: block;-->
+        transform-origin: 0% 2%;
     }
     .triangles2:hover {
         animation: hide-triangles 1.2s linear alternate infinite;
@@ -82,32 +83,45 @@
     }
     
     .orange-blob {
-        animation: scale 1s forwards linear;
+        animation: scale 0.75s forwards linear;
         transform-origin: 100%, 100%;
     }
     
-    .blue-circle:hover {
+    .blue-circle:hover{
 <!--        animation: infinite-spinning 1s linear alternate infinite;-->
-        fill: #ec008c;
-        opacity: 1;
 <!--        transform-origin: 80% 35%;-->
+        transform: rotate(6deg);
+        transform: translate(1 0);
+        transform: rotate(-6 deg);
+        transition: all 0.5s;
     }
-    .yellow-circle:hover {
+    .yellow-circle:hover{
 <!--        animation: infinite-spinning 1s linear alternate infinite;-->
-        fill: #ec008c;
-        opacity: 1;
 <!--        transform-origin: 80% 35%;-->
+        transform: rotate(6deg);
+        transition: all 0.5s;
     }
         
     .blue-blob {
-        animation: hide-object 1s forwards linear; 
+        animation: hide-object 0.75s forwards linear; 
+    }
+    .dots:hover {
+           -webkit-animation: rotation 2s infinite linear; 
+    }
+    @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
     }
 
         @keyframes x {
            from {  
-                stroke: #f3d757
+                stroke: #f3d757;
                     }
-             to {  stroke: #f3d757 }
+             to {  stroke: #f3d757; }
         }
         	
         @keyframes dash {
@@ -137,17 +151,17 @@
         
     @keyframes hide-object {
         from {
-            transform: translate(-5.5%, -100%)
+            transform: translate(-5.5%, -100%);
         } to {
-            transform: translate(-5.5%, 1%)
+            transform: translate(-5.5%, 1%);
         }
     }
         
     @keyframes hide-triangles {
         from {
-            transform: translate(-6%, 0.1%)
+            transform: translate(-6%, 0.1%);
         } to {
-            transform: translate(-6.55%, 2%)
+            transform: translate(-6.55%, 2%);
         }
         
     }
@@ -214,55 +228,55 @@
     
     
     <!-- Dots inside the orange blob-->
-    <path class="orange-blob" d="M1114.71,500.34c2.46-3.31,10.4-2.73,11.1,2.45.66,4.79-5,12.13-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1113.05,502.58,1114.71,500.34Z" fill="#606060" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1114.71,500.34c2.46-3.31,10.4-2.73,11.1,2.45.66,4.79-5,12.13-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1113.05,502.58,1114.71,500.34Z" fill="#606060" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1190.72,665c2.46-3.31,10.4-2.74,11.1,2.45.66,4.78-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1189.06,667.2,1190.72,665Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1190.72,665c2.46-3.31,10.4-2.74,11.1,2.45.66,4.78-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1189.06,667.2,1190.72,665Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1361.74,679.67c2.46-3.31,10.4-2.74,11.1,2.45.66,4.78-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1360.08,681.9,1361.74,679.67Z" fill="#606060" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1361.74,679.67c2.46-3.31,10.4-2.74,11.1,2.45.66,4.78-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1360.08,681.9,1361.74,679.67Z" fill="#606060" transform='translate(100 0)'/>
     
     <path class="orange-blob" d="M1229.91,591.05c2.45-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.2,11.84-2.16-.21-2.93-4-3.35-6.07S1228.25,593.29,1229.91,591.05Z" fill="#606060" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1105,445.55c-3.13-2.68-2-10.55,3.21-10.9,4.82-.32,11.75,5.88,11.24,9-.35,2.15-4.19,2.65-6.28,2.93S1107.07,447.37,1105,445.55Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1105,445.55c-3.13-2.68-2-10.55,3.21-10.9,4.82-.32,11.75,5.88,11.24,9-.35,2.15-4.19,2.65-6.28,2.93S1107.07,447.37,1105,445.55Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1337.66,571.46c2.46-3.31,10.4-2.73,11.1,2.45.66,4.79-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1336,573.7,1337.66,571.46Z" fill="#606060" transform='translate(100 0)' />
+    <path class="orange-blob dots" d="M1337.66,571.46c2.46-3.31,10.4-2.73,11.1,2.45.66,4.79-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1336,573.7,1337.66,571.46Z" fill="#606060" transform='translate(100 0)' />
     
-    <path class="orange-blob" d="M1003.71,657c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.07S1002.05,659.19,1003.71,657Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1003.71,657c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.07S1002.05,659.19,1003.71,657Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1177.32,609.07c-3.7-1.78-4.64-9.68.31-11.36,4.58-1.54,12.87,2.67,13.17,5.81.22,2.17-3.36,3.64-5.31,4.44S1179.84,610.28,1177.32,609.07Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1177.32,609.07c-3.7-1.78-4.64-9.68.31-11.36,4.58-1.54,12.87,2.67,13.17,5.81.22,2.17-3.36,3.64-5.31,4.44S1179.84,610.28,1177.32,609.07Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1306.5,606.19c2.45-3.3,10.39-2.73,11.09,2.45.66,4.79-5,12.13-8.19,11.83-2.16-.2-2.93-4-3.35-6.06S1304.83,608.43,1306.5,606.19Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1306.5,606.19c2.45-3.3,10.39-2.73,11.09,2.45.66,4.79-5,12.13-8.19,11.83-2.16-.2-2.93-4-3.35-6.06S1304.83,608.43,1306.5,606.19Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1055.91,684.05c3.85,1.47,5.43,9.27.63,11.34-4.43,1.92-13-1.6-13.6-4.7-.39-2.14,3-3.9,4.93-4.86S1053.31,683.05,1055.91,684.05Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1055.91,684.05c3.85,1.47,5.43,9.27.63,11.34-4.43,1.92-13-1.6-13.6-4.7-.39-2.14,3-3.9,4.93-4.86S1053.31,683.05,1055.91,684.05Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1290,517.81c-3.55-2.09-3.83-10,1.25-11.3,4.69-1.16,12.6,3.73,12.64,6.88,0,2.18-3.65,3.35-5.66,4S1292.43,519.22,1290,517.81Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1290,517.81c-3.55-2.09-3.83-10,1.25-11.3,4.69-1.16,12.6,3.73,12.64,6.88,0,2.18-3.65,3.35-5.66,4S1292.43,519.22,1290,517.81Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1236.14,546.52c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.19,11.84-2.17-.2-2.94-4-3.36-6.06S1234.48,548.76,1236.14,546.52Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1236.14,546.52c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.19,11.84-2.17-.2-2.94-4-3.36-6.06S1234.48,548.76,1236.14,546.52Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1053.58,392.46c2.46-3.31,10.39-2.73,11.1,2.45.65,4.79-5,12.12-8.2,11.83-2.16-.2-2.93-4-3.35-6.06S1051.92,394.7,1053.58,392.46Z" fill="#f8ac8e" opacity="0.9" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1053.58,392.46c2.46-3.31,10.39-2.73,11.1,2.45.65,4.79-5,12.12-8.2,11.83-2.16-.2-2.93-4-3.35-6.06S1051.92,394.7,1053.58,392.46Z" fill="#f8ac8e" opacity="0.9" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1066.05,465.48c2.45-3.3,10.39-2.73,11.1,2.45.65,4.79-5.05,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.06S1064.38,467.72,1066.05,465.48Z" fill="#f8ac8e" opacity="0.9" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1066.05,465.48c2.45-3.3,10.39-2.73,11.1,2.45.65,4.79-5.05,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.06S1064.38,467.72,1066.05,465.48Z" fill="#f8ac8e" opacity="0.9" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1118.31,681.55c-3.13-2.68-2-10.56,3.21-10.91,4.82-.32,11.75,5.88,11.24,9-.35,2.14-4.19,2.65-6.28,2.92S1120.42,683.36,1118.31,681.55Z" fill="#606060" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1118.31,681.55c-3.13-2.68-2-10.56,3.21-10.91,4.82-.32,11.75,5.88,11.24,9-.35,2.14-4.19,2.65-6.28,2.92S1120.42,683.36,1118.31,681.55Z" fill="#606060" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1045.29,441.82c-3.66,1.88-10.53-2.15-8.87-7.11,1.54-4.58,9.9-8.63,12.6-7,1.85,1.14.86,4.88.32,6.92S1047.77,440.55,1045.29,441.82Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1045.29,441.82c-3.66,1.88-10.53-2.15-8.87-7.11,1.54-4.58,9.9-8.63,12.6-7,1.85,1.14.86,4.88.32,6.92S1047.77,440.55,1045.29,441.82Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1250.39,657c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.07S1248.73,659.19,1250.39,657Z" fill="#606060" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1250.39,657c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.07S1248.73,659.19,1250.39,657Z" fill="#606060" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1160.45,546.52c2.45-3.3,10.39-2.73,11.09,2.45.66,4.79-5,12.13-8.19,11.84-2.16-.2-2.93-4-3.35-6.06S1158.78,548.76,1160.45,546.52Z" fill="#606060" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1160.45,546.52c2.45-3.3,10.39-2.73,11.09,2.45.66,4.79-5,12.13-8.19,11.84-2.16-.2-2.93-4-3.35-6.06S1158.78,548.76,1160.45,546.52Z" fill="#606060" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1015.39,742c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.07S1013.73,744.19,1015.39,742Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1015.39,742c2.46-3.3,10.39-2.73,11.1,2.45.65,4.79-5,12.13-8.2,11.84-2.16-.2-2.93-4-3.35-6.07S1013.73,744.19,1015.39,742Z" fill="#606060" opacity="0.9" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1136.51,747.42c1.52,3.82-3.13,10.27-7.91,8.15-4.42-2-7.67-10.66-5.77-13.19,1.31-1.73,4.94-.39,6.92.33S1135.48,744.82,1136.51,747.42Z" fill="#606060" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1136.51,747.42c1.52,3.82-3.13,10.27-7.91,8.15-4.42-2-7.67-10.66-5.77-13.19,1.31-1.73,4.94-.39,6.92.33S1135.48,744.82,1136.51,747.42Z" fill="#606060" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1258.62,725.65c-4.1.28-8.83-6.11-5.36-10,3.21-3.62,12.49-4.06,14.32-1.49,1.25,1.78-1.12,4.83-2.42,6.49S1261.41,725.45,1258.62,725.65Z" fill="#606060" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1258.62,725.65c-4.1.28-8.83-6.11-5.36-10,3.21-3.62,12.49-4.06,14.32-1.49,1.25,1.78-1.12,4.83-2.42,6.49S1261.41,725.45,1258.62,725.65Z" fill="#606060" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1196.43,729.38c2.57,3.22,0,10.75-5.19,10.11-4.8-.58-10.45-8-9.36-10.94.74-2,4.6-1.81,6.71-1.69S1194.69,727.21,1196.43,729.38Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1196.43,729.38c2.57,3.22,0,10.75-5.19,10.11-4.8-.58-10.45-8-9.36-10.94.74-2,4.6-1.81,6.71-1.69S1194.69,727.21,1196.43,729.38Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1319.92,652.45c4.08.55,7.41,7.78,3.22,10.9-3.88,2.88-13.06,1.44-14.33-1.46-.87-2,2.08-4.49,3.69-5.86S1317.16,652.07,1319.92,652.45Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1319.92,652.45c4.08.55,7.41,7.78,3.22,10.9-3.88,2.88-13.06,1.44-14.33-1.46-.87-2,2.08-4.49,3.69-5.86S1317.16,652.07,1319.92,652.45Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1306.72,720c2.46-3.31,10.4-2.74,11.1,2.45.66,4.78-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1305.06,722.2,1306.72,720Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1306.72,720c2.46-3.31,10.4-2.74,11.1,2.45.66,4.78-5,12.12-8.19,11.83-2.17-.2-2.93-4-3.35-6.06S1305.06,722.2,1306.72,720Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
-    <path class="orange-blob" d="M1166,517.81c-3.55-2.09-3.83-10,1.25-11.3,4.69-1.16,12.6,3.73,12.64,6.88,0,2.18-3.65,3.35-5.66,4S1168.43,519.22,1166,517.81Z" fill="#f8ac8e" transform='translate(100 0)'/>
+    <path class="orange-blob dots" d="M1166,517.81c-3.55-2.09-3.83-10,1.25-11.3,4.69-1.16,12.6,3.73,12.64,6.88,0,2.18-3.65,3.35-5.66,4S1168.43,519.22,1166,517.81Z" fill="#f8ac8e" transform='translate(100 0)'/>
     
     <!-- Register Button-->
     <text transform="translate(640.16 326.16)" font-size="42" fill="#43616d" font-family= "nobel, sans-serif" font-weight="400">where art meets tech</text>
