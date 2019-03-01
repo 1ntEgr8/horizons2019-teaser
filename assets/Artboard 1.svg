@@ -32,54 +32,84 @@
     }
         
     .triangles1:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
-<!--        display: block;-->
+        display: block;
         transform-origin: 0% 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
+        transition: all 1s;
     }
     .triangles2:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
     }
     .triangles3:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     .triangles4:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     .triangles5:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     .triangles6:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     .other-triangles1:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     .other-triangles2:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     .other-triangles3:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     .other-triangles4:hover {
+<!--
         animation: hide-triangles 1.2s linear alternate infinite;
         display: block;
         transform-origin: 0%, 2%;
+-->
+        transform: scale(1.15) rotate(15deg);
     }
     
     .orange-blob {
@@ -88,18 +118,16 @@
     }
     
     .blue-circle:hover{
-<!--        animation: infinite-spinning 1s linear alternate infinite;-->
-<!--        transform-origin: 80% 35%;-->
-        transform: rotate(6deg);
-        transform: translate(1 0);
-        transform: rotate(-6 deg);
-        transition: all 0.5s;
+        animation: infinite-spinning 1s linear alternate infinite;
+        transform-origin: 80% 35%;
+<!--        transform: rotate(15deg);-->
+<!--        transition: all 1s;-->
     }
     .yellow-circle:hover{
-<!--        animation: infinite-spinning 1s linear alternate infinite;-->
-<!--        transform-origin: 80% 35%;-->
-        transform: rotate(6deg);
-        transition: all 0.5s;
+        animation: infinite-spinning 1s linear alternate infinite;
+        transform-origin: 80% 35%;
+<!--        transform: rotate(6deg);-->
+<!--        transition: all 0.5s;-->
     }
         
     .blue-blob {
@@ -107,13 +135,14 @@
     }
     .dots:hover {
            -webkit-animation: rotation 2s infinite linear; 
+<!--        transform: scale(1.15) rotate(15deg);-->
     }
     @-webkit-keyframes rotation {
 		from {
-				-webkit-transform: rotate(0deg);
+				-webkit-transform: scale(1.15) rotate(15deg);
 		}
 		to {
-				-webkit-transform: rotate(359deg);
+				-webkit-transform: rotate(-15deg);
 		}
     }
 
@@ -297,10 +326,10 @@
     <text transform="translate(354.08 290.41)" font-size="117" fill="#ea7e3c" font-family="nobel, sans-serif" font-weight="700" font-style="normal" >HORIZONS</text>
     
     <!--Blue circle-->
-    <path class="blue-circle" d="M1255.85,237.05a165.7,165.7,0,0,0-324-49h41.67a126.5,126.5,0,1,1,174.06,161.71V392.5A165.74,165.74,0,0,0,1255.85,237.05Z" fill="#c2e3d3" transform='translate(100 0)'/>
+    <path class="blue-circle" d="M1255.85,237.05a165.7,165.7,0,0,0-324-49h41.67a126.5,126.5,0,1,1,174.06,161.71V392.5A165.74,165.74,0,0,0,1255.85,237.05Z" fill="#c2e3d3"/>
     
     <!--Yellow circle-->
-    <path class="yellow-circle" d="M1280.5,135c-8.77-15.47-41.57-68.93-110.3-95-79.34-30.07-148.37-1.55-162.38,4.6" fill="none" stroke="#f4d757" stroke-linecap="round" stroke-miterlimit="100" stroke-width="20" transform='translate(100 0)'/>
+    <path class="yellow-circle" d="M1280.5,135c-8.77-15.47-41.57-68.93-110.3-95-79.34-30.07-148.37-1.55-162.38,4.6" fill="none" stroke="#f4d757" stroke-linecap="round" stroke-miterlimit="100" stroke-width="20"/>
     
     <line x1="1361" y1="-223" x2="1367" y2="831" fill="none"/>
     
