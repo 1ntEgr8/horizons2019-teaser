@@ -362,4 +362,8 @@ footer {
     .button{
         width: 40%;
     }
+    
+    #faq {
+        margin-top: 30%;
+    }
 }
