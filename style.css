@@ -122,6 +122,11 @@ section#faq h3 {
     margin: 10%;
 }
 
+
+.picture-container {
+    align-content: center;
+    align-items: center;
+}
 .col-1-2 {
     flex: 1;
     max-width: 50%;
@@ -157,14 +162,16 @@ section#faq h3 {
   text-transform: uppercase;
   font: nobel, sans-serif; /* use google font */
   line-height: 2;
-  position: sticky;
-  display: inline-block;
+/*  display: inline-block;*/
   cursor: pointer;
   text-decoration: none; /* remove underline if using A instead of BUTTON tag */
   overflow: hidden;
   transition: all .5s;
-  width: 12%;
-  height: 7%; 
+  padding: 0.01em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+/*  width: 12%;*/
+/*  height: 7%; */
   margin-left: 55%;
   margin-top: -20%;
   z-index: 2;
@@ -173,7 +180,7 @@ section#faq h3 {
 .button:before,
 .button:after{
   content: '';
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
@@ -302,6 +309,7 @@ footer {
 
     .button {
         margin: 1em auto;
+        display: block;
     }
 
     #splash .col-1-3 {

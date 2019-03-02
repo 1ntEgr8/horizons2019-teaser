@@ -140,7 +140,7 @@
     @-webkit-keyframes rotation {
 		from {
 				-webkit-transform: scale(1.15) rotate(15deg);
-		}
+		}a
 		to {
 				-webkit-transform: rotate(-15deg);
 		}
