@@ -112,6 +112,7 @@ section#faq h3 {
 }
 
 #logo {
+    margin-top: 7%;
     height: 10vh;
 }
 
@@ -239,7 +240,8 @@ a {
 
 #about-img {
     background-image: url(assets/horizons-logo.png);
-    margin-right: 20%;
+    margin-left: -5%;
+    margin-top: 7%;
 }
 
 footer {
