@@ -10,8 +10,6 @@ body > div {
 
 body {
     margin: 0;
-/*    background-image: url(assets/Artboard%201.svg);*/
-    /*background-size: contain;*/
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
@@ -25,23 +23,17 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    background-size: 180% 300%;
+    background-size: 180% 225%;
     margin-top: 5%;
 }
 
 .picture {
-/*    position: relative;*/
-/*    background-image: url(assets/Artboard%201.svg);*/
-/*    display: inline-block;*/
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: 0 2%;
-/*    float: right;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
     flex: auto;
-    z-index: -1;
+    z-index: -2;
     overflow: hidden;
 }
 
@@ -87,7 +79,6 @@ a {
 }
 
 #faq {
-/*    margin-bottom: 1em;*/
     margin-top: 5%;
 }
 
@@ -98,7 +89,6 @@ a {
 section {
     padding-left: 10vw;
     padding-right: 10vw;
-    /*padding-top: 4em;*/
     padding-bottom: 0;
     display: flex;
     flex-flow: column;
@@ -166,11 +156,9 @@ section#faq h3 {
   justify-content: center;
   border-bottom: 4px solid #eee;
   letter-spacing: 0.0625em;
-/*  padding: 8px 10px; */
   text-transform: uppercase;
   font: nobel, sans-serif; /* use google font */
   line-height: 2;
-/*  display: inline-block;*/
   cursor: pointer;
   text-decoration: none; /* remove underline if using A instead of BUTTON tag */
   overflow: hidden;
@@ -178,11 +166,8 @@ section#faq h3 {
   padding: 0.01em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-/*  width: 12%;*/
-/*  height: 7%; */
   margin-left: 55%;
   margin-top: -20%;
-/*  z-index: 1;*/
 }
 
 .button:before,
@@ -193,7 +178,6 @@ section#faq h3 {
   top: 0;
   right: 0;
   bottom: 0;
-/*  height: 100%;*/
   background: white; /* onhover background color */
   z-index: -1;
   -webkit-transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
@@ -314,9 +298,6 @@ footer {
         margin-right: 8em;
     }
     
-    .picture {
-        content: url('assets/phoneteaser-01.jpg');
-    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -387,27 +368,6 @@ footer {
     }
 }
 
-/*
-<!--
-    path 
-		stroke-dasharray: 10000;
-		stroke-dashoffset: 10000;
-		stroke: orange;
-		stroke-width: 2px;
-		animation: dash 10s linear forwards,
-                
-		fill: none;
-	}
-
-	@keyframes dash {
-		from {
-			stroke-dashoffset: 10000;
-		} to {
-			stroke-dashoffset: 0;
-		}
-	}
--->
-*/
     .yellow-lines { 
         
         
@@ -427,18 +387,10 @@ footer {
     .blue-circle:hover{
         animation: infinite-spinning 1s linear alternate infinite;
         transform-origin: 80% 35%;
-/*
-<!--        transform: rotate(15deg);-->
-<!--        transition: all 1s;-->
-*/
     }
     .yellow-circle:hover{
         animation: infinite-spinning 1s linear alternate infinite;
         transform-origin: 80% 35%;
-/*
-<!--        transform: rotate(6deg);-->
-<!--        transition: all 0.5s;-->
-*/
     }
         
     .blue-blob {
@@ -446,7 +398,6 @@ footer {
     }
     .dots:hover {
            -webkit-animation: rotation 2s infinite linear; 
-/*<!--        transform: scale(1.15) rotate(15deg);-->*/
     }
     @-webkit-keyframes rotation {
 		from {
