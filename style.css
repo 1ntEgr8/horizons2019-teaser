@@ -20,6 +20,15 @@ body {
     overflow-x: hidden;
 }
 
+.info {
+    background-image: url(assets/1about.png);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: 180% 300%;
+    margin-top: 5%;
+}
+
 .picture {
 /*    position: relative;*/
 /*    background-image: url(assets/Artboard%201.svg);*/
@@ -55,14 +64,16 @@ h2 {
 }
 
 h3 {
-    color: #43616d;
+    color: #EA7E3C;
     font-weight: 700;
     margin: 0;
     font-size: 1.75em;
+    font-family: nobel, sans-serif;
 }
 
 b {
     font-family: nobel, sans-serif;
+    color: #43616D;
 }
 
 a {
@@ -76,15 +87,12 @@ a {
 }
 
 #faq {
-    margin-bottom: 1em;
+/*    margin-bottom: 1em;*/
+    margin-top: 5%;
 }
 
 #faq a {
     color: #f9ac8e;
-}
-
-.info {
-    margin-top: 0.5em;
 }
 
 section {
@@ -119,7 +127,7 @@ section#faq h3 {
 .container {
     flex: 1 1 auto;
     display: flex;
-    margin: 10%;
+    margin-right: 10%;
 }
 
 
@@ -174,7 +182,7 @@ section#faq h3 {
 /*  height: 7%; */
   margin-left: 55%;
   margin-top: -20%;
-  z-index: 2;
+/*  z-index: 1;*/
 }
 
 .button:before,
@@ -188,14 +196,14 @@ section#faq h3 {
 /*  height: 100%;*/
   background: white; /* onhover background color */
   z-index: -1;
-  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  -webkit-transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
   transition: all .5s;
 }
 
 .button:before{
   background: #f9ac8e; /* button default background color */
   z-index: -2;
-  transform: translate3D(0,0,0);
+  -webkit-transform: translate3D(0,0,0);
 }
 
 .button:hover{
@@ -203,24 +211,29 @@ section#faq h3 {
 }
 
 .button:hover:after{
-  transform: translate3D(0,0,0);
+  -webkit-transform: translate3D(0,0,0);
   transition: all .5s;
 }
 
+p {
+    font-family: nobel, sans-serif;
+    color: #43616D;
+}
+
 .curtainup{
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .curtainup:before,
 .curtainup:after{
-  transform-origin: center center;
-  transform: scale(1,0);
+  -webkit-transform-origin: center center;
+  -webkit-transform: scale(1,0);
 }
 
 
 .curtainup:hover:before,
 .curtainup:hover:after{
-  transform: scale(1);
+  -webkit-transform: scale(1);
   border-radius: 0;
 }
 
@@ -310,6 +323,7 @@ footer {
 
     .container {
         flex-flow: column;
+        margin-right: 15%;
     }
 
     .button {
@@ -370,5 +384,141 @@ footer {
     
     #faq {
         margin-top: 3em;
+    }
+}
+
+/*
+<!--
+    path 
+		stroke-dasharray: 10000;
+		stroke-dashoffset: 10000;
+		stroke: orange;
+		stroke-width: 2px;
+		animation: dash 10s linear forwards,
+                
+		fill: none;
+	}
+
+	@keyframes dash {
+		from {
+			stroke-dashoffset: 10000;
+		} to {
+			stroke-dashoffset: 0;
+		}
+	}
+-->
+*/
+    .yellow-lines { 
+        
+        
+        stroke-dasharray: 10000;
+		stroke-dashoffset: 10000;
+        stroke-width: 10px;
+        fill-opacity: 0;
+        animation: x 10s linear alternate infinite,
+                    dash 10s linear alternate infinite;
+    }
+
+    .orange-blob {
+        animation: scale 0.75s forwards linear;
+        transform-origin: 100%, 100%;
+    }
+    
+    .blue-circle:hover{
+        animation: infinite-spinning 1s linear alternate infinite;
+        transform-origin: 80% 35%;
+/*
+<!--        transform: rotate(15deg);-->
+<!--        transition: all 1s;-->
+*/
+    }
+    .yellow-circle:hover{
+        animation: infinite-spinning 1s linear alternate infinite;
+        transform-origin: 80% 35%;
+/*
+<!--        transform: rotate(6deg);-->
+<!--        transition: all 0.5s;-->
+*/
+    }
+        
+    .blue-blob {
+        animation: hide-object 0.75s forwards linear; 
+    }
+    .dots:hover {
+           -webkit-animation: rotation 2s infinite linear; 
+/*<!--        transform: scale(1.15) rotate(15deg);-->*/
+    }
+    @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: scale(1.15) rotate(15deg);
+		}a
+		to {
+				-webkit-transform: rotate(-15deg);
+		}
+    }
+
+        @keyframes x {
+           from {  
+                stroke: #f3d757;
+                    }
+             to {  stroke: #f3d757; }
+        }
+        	
+        @keyframes dash {
+            from {
+                stroke-dashoffset: 10000;
+            } to {
+                stroke-dashoffset: 0;
+            }
+	   }
+        
+    @keyframes infinite-spinning {
+         from {
+           transform: rotate(-3deg);
+         }
+         to {
+           transform: rotate(9deg);
+         }
+    }
+    @keyframes infinite-spinning-reverse {
+         from {
+           transform: rotate(9deg);
+         }
+         to {
+           transform: rotate(-3deg);
+         }
+    }
+        
+    @keyframes hide-object {
+        from {
+            transform: translate(-5.5%, -100%);
+        } to {
+            transform: translate(-5.5%, 1%);
+        }
+    }
+        
+@keyframes hide-triangles {
+    from {
+        transform: translate(-6%, 0.1%);
+    } to {
+        transform: translate(-6.55%, 2%);
+    }
+        
+}
+    
+        
+@keyframes scale {
+    from {
+        transform: scale3d(1.5, 1.5, 1.5);
+    } to {
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+}
+    
+@keyframes opacity {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
     }
 }
