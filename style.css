@@ -509,7 +509,7 @@ footer p {
     }
         
     .blue-blob {
-        animation: hide-object 0.75s forwards linear; 
+        animation: hide-object 0.75s forwards ease-out; 
     }
     .dots:hover {
            -webkit-animation: rotation 2s infinite linear; 
