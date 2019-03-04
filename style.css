@@ -18,13 +18,14 @@ body {
     overflow-x: hidden;
 }
 
+/*
 .info {
-    background-image: url(assets/1about.png);
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-size: 180% 225%;
-    margin-top: -4%;
+    
+}
+*/
+
+.questions {
+    margin-right: 15%;
 }
 
 .picture {
@@ -59,13 +60,14 @@ h3 {
     color: #EA7E3C;
     font-weight: 700;
     margin: 0;
-    font-size: 1.75em;
+    font-size: 3.5vw;
     font-family: nobel, sans-serif;
 }
 
 b {
     font-family: nobel, sans-serif;
     color: #43616D;
+    font-size: 1.5vw;
 }
 
 a {
@@ -74,14 +76,16 @@ a {
 
 #about {
     margin-top: 0.5em;
-    margin-bottom: 0;
+/*    margin-bottom: 0;*/
     margin-left: 1em;
-    padding-top: 7%;
+    padding-top: 20%;
 }
 
 #faq {
-    margin-top: 5%;
+    padding-top: 20%;
+    margin-left: 1em;
 }
+
 
 #faq a {
     color: #f9ac8e;
@@ -102,7 +106,7 @@ section#about {
 }
 
 section#faq h3 {
-    margin-bottom: 2em;
+    margin-bottom: 0.75em;
 }
 
 .header {
@@ -120,6 +124,7 @@ section#faq h3 {
     flex: 1 1 auto;
     display: flex;
     margin-right: 10%;
+    min-height: 100%;
 }
 
 
@@ -148,27 +153,28 @@ section#faq h3 {
 
 .button {
   color: #43616d; /* button text color */
-  border-radius: 50px;
+  border-radius: 75px;
   outline: none;
+  font-weight: 500;
   background: #f9ac8e;
   border: none;
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: center;
   align-items: center;
   justify-content: center;
   border-bottom: 4px solid #eee;
   letter-spacing: 0.0625em;
-  text-transform: uppercase;
   font: nobel, sans-serif; /* use google font */
   line-height: 2;
   cursor: pointer;
   text-decoration: none; /* remove underline if using A instead of BUTTON tag */
   overflow: hidden;
   transition: all .5s;
-  padding: 0.01em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  margin-left: 55%;
+  padding-top: 0.15em;
+  padding-bottom: 0.15em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-left: 53%;
   margin-top: -20%;
 }
 
@@ -204,6 +210,7 @@ section#faq h3 {
 p {
     font-family: nobel, sans-serif;
     color: #43616D;
+    font-size: 1.5vw;
 }
 
 .curtainup{
@@ -226,6 +233,7 @@ p {
 a {
     color: white;
 }
+/*
 
 #hero-img, #about-img {
     background-size: contain;
@@ -233,6 +241,7 @@ a {
     background-position: center center;
 
 }
+*/
 
 #hero-img {
     background-image: url(assets/hero.png);
@@ -240,8 +249,11 @@ a {
 
 #about-img {
     background-image: url(assets/horizons-logo.png);
-    margin-left: -5%;
-    margin-top: 7%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: -18%;
 }
 
 footer {
@@ -250,6 +262,10 @@ footer {
     background-color: #f9ac8e;
     padding: 1.5em 10vw 0.5em 10vw;
     color: white;
+}
+
+footer p {
+    font-family: nobel, sans-serif;
 }
 
 #left-footer, #right-footer {
@@ -278,14 +294,29 @@ footer {
     transition: 0.25s transform;
 }
 
+.logo-name {
+    font-family: 'Barlow'; sans-serif;
+}
+
+
 .social > a > img:hover {
     transform: scale(1.15) rotate(15deg);
+}
+
+.info-container {
+    background-image: url(assets/1about.png);
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: -12.5%;
+    background-size: 180% 225%;
+    margin-top: -10%;
 }
 
 @media only screen and (min-width: 981px) {
 
     #about .col-2-3 {
-        margin-right: 2em;
+/*        margin-right: 2em;*/
         padding-top: 5%;
     }
     
@@ -307,6 +338,10 @@ footer {
         margin-right: 8em;
     }
     
+    #about-img {
+        background-image: url(assets/horizons-logo.png);
+    }
+    
 }
 
 @media only screen and (max-width: 980px) {
@@ -314,10 +349,17 @@ footer {
     .container {
         flex-flow: column;
         margin-right: 15%;
+        min-height: 100%;
+    }
+    
+    #about-img {
+        background-image: url(assets/horizons-logo.png);
     }
     
     #about {
         padding-top: 5%;
+        margin-left: 5%;
+        left: 0;
     }
     
     .info {
@@ -390,7 +432,7 @@ footer {
         
         stroke-dasharray: 10000;
 		stroke-dashoffset: 10000;
-        stroke-width: 10px;
+        stroke-width: 5px;
         fill-opacity: 0;
         animation: x 10s linear alternate infinite,
                     dash 10s linear alternate infinite;
