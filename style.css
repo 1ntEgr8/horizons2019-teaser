@@ -452,11 +452,9 @@ footer p {
         height: 5vh;
     }
 
-/*
-    body {
-        font-size: 3vw;
+    span a {
+        
     }
-*/
 
     h1 {
         letter-spacing: 0.1em;
