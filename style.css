@@ -489,12 +489,12 @@ footer p {
     }
 
     .orange-blob {
-        animation: scale 0.75s forwards linear;
+        animation: scale 0.75s forwards ease-out;
         transform-origin: 100%, 100%;
     }
     
     .blue-circle:hover{
-        animation: infinite-spinning 1s linear alternate infinite;
+        animation: infinite-spinning 1s ease-out alternate infinite;
         transform-origin: 80% 35%;
     }
     .yellow-circle:hover{
