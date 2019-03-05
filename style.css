@@ -398,6 +398,7 @@ footer p {
     
     #about-img {
         background-image: url(assets/horizons-logo.png);
+        margin-top: 20%;
     }
     
     #about {
