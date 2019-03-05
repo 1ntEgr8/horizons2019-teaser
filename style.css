@@ -294,6 +294,8 @@ footer {
 
 footer p {
     font-family: nobel, sans-serif;
+    color: white;
+    font-size: 0.85vw;
 }
 
 #left-footer, #right-footer {
