@@ -232,6 +232,12 @@ span a:hover {
   transform: scaleX(1);
 }
 
+.map {
+    margin-bottom: 3%;
+    width: 50vh;
+    height: 50vh;
+}
+
 p {
     font-family: nobel, sans-serif;
     color: #43616D;
@@ -388,6 +394,11 @@ footer p {
     
     p {
         font-size: 3vw;
+    }
+    
+    .map {
+        width: 20vh;
+        height: 20vh;
     }
     
     b {
