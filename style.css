@@ -60,7 +60,7 @@ h3 {
     color: #EA7E3C;
     font-weight: 700;
     margin: 0;
-    font-size: 3.5vw;
+    font-size: 2vw;
 }
 
 .bold {
@@ -356,7 +356,7 @@ footer p {
     }
     
     h3 {
-        font-size: 5vw;
+        font-size: 2.5em;
     }
 
     #about .col-1-3 {
@@ -366,7 +366,7 @@ footer p {
     }
     
     #faq {
-        margin-top: 2em;
+        margin-top: 35%;
     }
 
     .col-1-2 > div {
@@ -452,7 +452,7 @@ footer p {
         margin-right: -2em;
         min-height: 30%;
         max-height: 30%;
-        margin-bottom: 20%;
+        margin-bottom: 30%;
     }
 
     .col-1-3 {
@@ -492,6 +492,7 @@ footer p {
     
     #faq {
         margin-top: 55%;
+        margin-left: 7%;
     }
     
     .info-container {
