@@ -65,10 +65,8 @@ h3 {
     font-family: nobel, sans-serif;
 }
 
-b {
-    font-family: nobel, sans-serif;
-    color: #43616D;
-    font-size: 1.25vw;
+.bold {
+    font-weight: 700;
 }
 
 a {
@@ -229,7 +227,7 @@ span a:hover {
 
 .button:hover:before, .button:focus:before, .button:active:before {
     -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 .map {
@@ -241,7 +239,7 @@ span a:hover {
 p {
     font-family: nobel, sans-serif;
     color: #43616D;
-    font-size: 1.25vw;
+    /* font-size: 1.25vw; */
 }
 
 /*
@@ -276,10 +274,10 @@ a {
 
 }
 */
-
+/* 
 #hero-img {
     background-image: url(assets/hero.png);
-}
+} */
 
 #about-img {
     background-image: url(assets/horizons-logo.png);
