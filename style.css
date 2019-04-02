@@ -118,14 +118,17 @@ a {
 /*    border: 3px solid green;*/
 }
 #schedule-container {
+/*
     position: relative;
     width: 100%; 
+*/
 /*    border: 3px solid green;*/
 /*    text-indent: 39.8%;*/
 
 
     
 }
+
 #schedule-title {
     text-indent: 39.8%;
 }
@@ -155,9 +158,11 @@ a {
     font-weight: 400;
     padding-right: 5px;
 }
+
 td {
     padding-bottom: 1.5%;
-    width: 8.1%
+    width: 4.05%;
+    vertical-align: top;
 }
 br {
     padding-bottom: 0.75%;
@@ -165,7 +170,7 @@ br {
 
 .day-title {
     font-size: 1.25em;
-        font-weight: bold;
+    font-weight: bold;
     font-style: normal;
     font-stretch: normal;
     line-height: 1.2;
@@ -186,7 +191,10 @@ br {
 #faq a {
     color: #f9ac8e;
 }
-
+#story-background {
+/*    background-image: url("assets/sidestory.svg");*/
+    display: block; 
+}
 section {
     padding-left: 10vw;
     padding-right: 10vw;
