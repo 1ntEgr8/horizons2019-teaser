@@ -187,9 +187,15 @@ a {
 #faq a {
     color: #f9ac8e;
 }
+img {
+    display: block; 
+}
 #story-background {
 /*    background-image: url("assets/sidestory.svg");*/
     display: block; 
+/*    left: -5%; */
+/*    margin-left: 50%;*/
+    border-style: solid;
 }
 
 section {
