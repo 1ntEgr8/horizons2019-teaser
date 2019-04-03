@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "nobel", serif;
+    font-family: "nobel", sans-serif;
     font-weight: "300"
 
 }
@@ -16,23 +16,13 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     color: #4A4A4A;
-    font-family: "nobel";
+    font-family: "nobel", sans-serif;
     font-size: 300;
     font-size: 24px;
     overflow-x: hidden;
     position: relative;
 }
 
-/*
-.info {
-    
-}
-*/
-
-#questions {
-    margin-right: 40%;
-    margin-left: 0.5%;
-}
 
 .picture {
     height: 100%;
@@ -79,7 +69,7 @@ a {
     vertical-align: top;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20%;
+    flex: 0 0 20%;
 }
 
 .section-title {
@@ -104,11 +94,10 @@ a {
 #about-container {
     width: 70%;
     min-width: 200px;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 #faq {
-    /*    padding-top: 20%;*/
     margin-top: 15%;
     display: flex;
     align-items: stretch;
@@ -117,6 +106,7 @@ a {
 #faq-banner {
     background-image: url(assets/sidefaq.svg);
     background-position: center;
+    order: 1;
 }
 
 #schedule {
@@ -127,6 +117,7 @@ a {
 #schedule-banner {
     background-image: url('assets/sideschedule.svg');
     background-position: center;
+    order: 0;
 }
 
 #schedule-container {
@@ -138,7 +129,7 @@ a {
 
 .schedule-item {
     color: #43616d;
-    font-size: 1.3em;
+    font-size: 1.125em;
     font-weight: 550;
     line-height: 1.2;
     margin-bottom: 3px;
@@ -147,12 +138,10 @@ a {
 
 .schedule-item-minor {
     text-align: left;
-    margin-right: 5px;
     font-weight: 400;
-    font-size: 1.1em;
-    line-height: 1;
+    font-size: 1em;
+    line-height: 1.2;
     margin-bottom: 3px;
-    position: relative;
 }
 
 .schedule-item-major {
@@ -167,17 +156,22 @@ a {
 .schedule-item-desc {
     display: inline-block;
     position: relative;
-    margin-left: 60%;
+    margin-left: 50%;
     text-align: left;
+    padding-left: 35px;
+    background-image: url('assets/dot.svg');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 24px; 
 }
 
 .day-title {
     color: #ea7e3c;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 700;
     line-height: 1.2;
     margin-left: -1em;
-    margin-bottom: .8em;
+    margin-bottom: .5em;
 }
 
 #faq a {
@@ -196,9 +190,8 @@ img {
 
 #story-awards-list {
     color: #43616d;
-    font-size: 1.5em;
+    font-size: 1.125em;
     margin: 0%;
-    padding-bottom: 0%;
     list-style-position: inside;
     /*    list-style-image: url('assets/dot.svg');*/
 }
@@ -206,21 +199,24 @@ img {
 #story-awards-entry {
     background-image: url('assets/dot.svg');
     margin-bottom: 1em;
-    padding: 3% 25% 0% 40px;
+    padding-left: 50px;
     list-style: none;
     /*	background-image: url("../../images/checked_red.svg");*/
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left top;
     background-size: 40px;
 }
 
 #story-quote-container {
+    font-style: italic;
     font-size: 1.5em;
-    width: 56%;
+    margin: auto;
+    max-width: 700px;
+    min-width: 225px;
 }
 
 #story-description-container {
-    font-size: 1.5em;
+    font-size: 1.125em;
     width: 84.3%;
 }
 
@@ -230,24 +226,34 @@ img {
 
 #story-banner {
     background-image: url('assets/rightsidestory.svg');
-    background-position: 47%;
-    /* hardcoding due to whitespace in design asset? */
+    background-position: 48%;
+    order: 1;
+    /* hardcoding position due to whitespace in design asset? */
 }
 
 #story-container {
     display: inline-flex;
     flex-direction: column;
-    padding: 1em 10% 3em;
+    padding: 1em 10% 1em;
     flex-grow: 1;
     font-size: 24px;
+}
+
+#story-title {
+    margin: .5em 0;
+    text-align: left;
+}
+
+#einstein {
+    font-size: .8em;
 }
 
 section {
     box-sizing: border-box;
     min-height: 50%;
-    margin-top: 1em;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .header {
@@ -272,21 +278,6 @@ section {
 .picture-container {
     align-content: center;
     align-items: center;
-}
-
-.col-1-2 {
-    flex: 1;
-    max-width: 50%;
-    float: left;
-}
-
-.col-1-3 {
-    flex: 1.25;
-}
-
-.col-2-3 {
-    flex: 2;
-    margin-right: 20%;
 }
 
 #time {
@@ -514,11 +505,11 @@ footer p {
 }
 
 .info-container {
-    padding: 0em 10% 1em 15%;
-    display: inline-flex;
+    padding: 0em 10%;
+    display: flex;
     flex-direction: column;
     flex-grow: 1;
-    font-size: 1.2em;
+    font-size: 1.125em;
 }
 
 @media only screen and (min-width: 981px) {
@@ -676,12 +667,14 @@ footer p {
 
     .schedule-item-desc {
         display: block;
-        margin-left: 1em;
+        margin-left: 20%;
+        padding-left: 25px;
+        background-size: 20px; 
     }
 
     .schedule-item-minor {
         text-align: left;
-        margin-left: 3em;
+        margin-left: 10px;
     }
 
     .day-title {
@@ -695,7 +688,7 @@ footer p {
     }
 
     .banner {
-        display: none;
+        flex: 0 0 10%;
     }
 
     #questions {
@@ -707,9 +700,11 @@ footer p {
     }
 
     #story-awards-entry {
-        padding: 5px 10% 0 40px;
+        padding-left: 40px;
         position: relative;
         left: -30px;
+        background-size: 30px;
+
     }
 }
 
