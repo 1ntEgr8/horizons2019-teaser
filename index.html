@@ -473,13 +473,11 @@
             <span class="button">
                 <a href="https://registration.horizons.hack.gt/login">Register</a>
             </span>
-            <!--            <button class="button curtainup" onclick="window.location.href = 'https://registration.horizons.hack.gt/login';">Register</button>    -->
         </div>
         <div class="info">
             <section id="about">
-                <div class="container">
-                    <div class="col-2-3">
-                        <h3>about</h3>
+                <div id="about-container">
+                        <div class="section-title">about</div>
                         <p>There's a new event on the horizon! HackGT is presenting an Art+Tech make-a-thon called
                             Horizons, where participants get to brainstorm, design, and create projects integrating art
                             and technology. At the end of the event, we'll have a showcase of all the projects and
@@ -487,16 +485,15 @@
 
                         <p>Feel unprepared? Don't worry! We'll have plenty of mentors on hand to help with projects,
                             presentations, idea creation, and technical difficulties!</p>
-
-                        <!--                             <p>Join us as HackGT ventures into the world of the arts. Create something novel, something hilarious, or something that changes the world! </p> -->
-                    </div>
-                    <div class="col-1-3" id="about-img"></div>
+                </div>
+                <div id="about-banner">
+                    <img src="assets/horizons-logo.png" /> 
                 </div>
             </section>
             <section id="faq">
                 <div class="info-container">
-                    <h3>questions?</h3>
-                    <div class="questions">
+                    <div class="section-title">questions?</div>
+                    <div id="questions">
                         <div>
                             <p class="bold">What is a make-a-thon?</p>
                             <p>A make-a-thon is an event where
@@ -581,15 +578,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="banner" id="faq-banner"></div>
             </section>
             <section id="schedule">
-                <div id="schedule-banner">
+                <div class="banner" id="schedule-banner">
                 </div>
                 <div id="schedule-container">
-                    <h3 id="schedule-title"> Schedule</h3>
+                    <h3 class="section-title"> Schedule</h3>
                     <div class="schedule-item-major schedule-item">
                         <div class="day-title">Friday</div>
-                        <br>
                     </div>
                     <div class="schedule-item">
                         <div class="schedule-item-time">5:30 am</div>
@@ -621,7 +618,6 @@
                     </div>
                     <div class="schedule-item-major schedule-item">
                         <div class="day-title">Saturday</div>
-                        <br>
                     </div>
                     <div class="schedule-item"> 
                         <div class="schedule-item-time">10:00 am - 12:00 pm</div>
@@ -630,11 +626,10 @@
                     <div class="schedule-item"> 
                         <div class="schedule-item-time">12:00 pm - 1:00 pm</div>
                         <div class="schedule-item-desc">Workshops
-                                    <div class="schedule-item-minor">&nbsp Photoshop </div>
-                                    <div class="schedule-item-minor">&nbsp Unity </div>
-                                    <div class="schedule-item-minor">&nbsp Laser Cutting </div>
-                                    <div class="schedule-item-minor">&nbsp Sewing </div>
-                                    <br>
+                            <div class="schedule-item-minor">&nbsp Photoshop </div>
+                            <div class="schedule-item-minor">&nbsp Unity </div>
+                            <div class="schedule-item-minor">&nbsp Laser Cutting </div>
+                            <div class="schedule-item-minor">&nbsp Sewing </div>
                         </div>
                     </div>
 
@@ -670,10 +665,8 @@
             </section>
             <br>
             <section id="story">
-                <div id="story-banner">
-                </div>
                 <div id="story-container">
-                    <div id="story-title"> 
+                    <div class="section-title" id="story-title"> 
                             show me a story . . .
                     </div>
                     <div id="story-quote-container">
@@ -688,8 +681,8 @@
                            We want to see you make your own unique story that meaningfully melds elements of both arts and technology. So go forth, begin your journey, expand your horizons, and create your story...
                         </p>
                     </div>
-                    <div id="awards-container">
-                        <div id="story-awards-title"> 
+                    <div id="story-awards-container">
+                        <div class="section-title" id="story-awards-title"> 
                                 awards
                         </div>
                         <ul id="story-awards-list"> 
@@ -698,8 +691,8 @@
                              <li id="story-awards-entry"> <b>Popular Choice Award:</b> Fellow students and audience will vote for their favorite projects!</li>
                         </ul>
                     </div>
-                    
-                    
+                </div>
+                <div class='banner' id="story-banner">
                 </div>
             </section>
 
@@ -707,7 +700,7 @@
         <footer>
             <div id="footer-container">
                 <div id="left-footer">
-                    <div class="social">
+                    <div id="social">
                         <a href="https://www.instagram.com/thehackgt/?hl=en">
                             <img src="assets/Instagram.svg" />
                         </a>
@@ -727,7 +720,10 @@
                     <p>made with &lt;3 by the HackGT Team</p>
                 </div>
                 <div id="right-footer">
-                    <a href="https://hack.gt/about/">About HackGT <img src="assets/hackgtlogo.png" /></a>
+                    <a href="https://hack.gt/about/">
+                        About HackGT &nbsp
+                        <img id="hackgt-logo" src="assets/hackgtlogo.png" />
+                    </a>
                 </div>
             </div>
         </footer>
