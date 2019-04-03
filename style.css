@@ -430,8 +430,8 @@ a {
     /* margin-left: 5%; */
     /* margin-top: 5%; */
     /* background-size: contain; */
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
     max-width: 400px;
     max-height: 400px;
     padding: 1em;
@@ -586,13 +586,21 @@ footer p {
 
     #about {
         padding-top: 5%;
-        margin-left: 10%;
         left: 0;
     }
 
     section #about {
         min-height: 60%;
     }
+
+    #about-banner {
+        max-width: 200px;
+        max-height: 200px;
+        padding: 1em;
+        display: block;
+        /* margin-right: -18%; */
+    }
+    
 
     .info {
         margin-top: -5%;
