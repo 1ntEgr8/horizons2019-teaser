@@ -1,7 +1,7 @@
 @font-face {
     font-family: "nobel", sans-serif;
-    font-weight: "300"
-
+    font-weight: "300";
+    src: url("fonts/nobel.ttf");
 }
 
 body>div {
@@ -17,7 +17,6 @@ body {
     background-repeat: no-repeat;
     color: #4A4A4A;
     font-family: "nobel", sans-serif;
-    font-size: 300;
     font-size: 24px;
     overflow-x: hidden;
     position: relative;
