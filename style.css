@@ -247,6 +247,11 @@ img {
     font-size: .8em;
 }
 
+#info-link {
+    text-decoration: underline;
+    color: #ea7e3c;
+}
+
 section {
     box-sizing: border-box;
     min-height: 50%;
